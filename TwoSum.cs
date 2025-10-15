@@ -23,7 +23,7 @@ class Result
      *  1. INTEGER_ARRAY arr
      *  2. INTEGER target
      */
-
+    // Hashing Approach (if the array is not sorted)
     public static List<int> two_sum(List<int> arr, int target)
     {
         Dictionary<int, int> dictionary = new Dictionary<int, int>();
@@ -40,7 +40,26 @@ class Result
         }
         return new List<int>();
     }
+    // Two Pointer Approach (only works if the array is sorted)
+    public static int[] TwoSum_TwoPointer(int[] nums, int target)
+    {
+        int left = 0;
+        int right = nums.Length - 1;
 
+        while (left < right)
+        {
+            int sum = nums[left] + nums[right];
+
+            if (sum == target)
+                return new int[] { left, right };
+            else if (sum < target)
+                left++; // move right to get a bigger sum
+            else
+                right--; // move left to get a smaller sum
+        }
+
+        return Array.Empty<int>(); // no valid pair
+    }
 }
 
 class Solution
