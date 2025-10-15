@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Logicmojo-DSA-Course-Oct25-amith/CopilotIndices/17.14.878.3237
+/.vs/Logicmojo-DSA-Course-Oct25-amith/FileContentIndex
+/TwoSum/.vs/TwoSum/CopilotIndices/17.14.878.3237
+/TwoSum/.vs/TwoSum/FileContentIndex
+/TwoSum/.vs/TwoSum/v17
+/TwoSum/bin/Debug/net8.0
+/TwoSum/obj
+/.vs/slnx.sqlite
+/.vs/Logicmojo-DSA-Course-Oct25-amith/v17/.wsuo
