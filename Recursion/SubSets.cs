@@ -1,4 +1,16 @@
-﻿public class Solution
+﻿//Intuition
+//                          []
+//                 /                    \
+//           add 1                        remove 1
+//           [1]                           []
+//         /       \                     /      \
+//   add 2         remove 2           add 2      remove 2
+//   [1,2]          [1]             [2]         []
+//   /    \         /    \         /    \       /   \
+//[1,2,3] [1,2]  [1,3] [1]      [2,3] [2]   [3]   []
+//   ✔       ✔       ✔      ✔         ✔     ✔     ✔     ✔
+
+public class Solution
 {
     public IList<IList<int>> Subsets(int[] nums)
     {
