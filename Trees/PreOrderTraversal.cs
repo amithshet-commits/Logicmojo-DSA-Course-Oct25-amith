@@ -22,4 +22,13 @@
         }
         return res;
     }
+
+    public IList<int> PreorderTraversalRecursive(TreeNode root)
+    {
+        if (root == null) return new List<int>();
+        res.Add(root.val);
+        PreorderTraversalRecursive(root.left);
+        PreorderTraversalRecursive(root.right);
+        return res;
+    }
 }
