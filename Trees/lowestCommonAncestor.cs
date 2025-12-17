@@ -8,10 +8,17 @@
         }
         TreeNode left = LowestCommonAncestor(root.left, p, q);
         TreeNode right = LowestCommonAncestor(root.right, p, q);
-        if (left != null && right != null)
+        if (left == null)
+        {
+            return right;
+        }
+        else if (right == null)
+        {
+            return left;
+        }
+        else
         {
             return root;
         }
-        return left != null ? left : right;
     }
 }
